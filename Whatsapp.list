@@ -13,8 +13,6 @@ DOMAIN-SUFFIX,whatsapp.biz
 DOMAIN-SUFFIX,whatsapp.com
 DOMAIN-SUFFIX,whatsapp.net
 DOMAIN-KEYWORD,whatsapp
-SRC-IP-CIDR,192.168.8.11/32,217.180.40.155,no-resolve
-SRC-IP-CIDR,192.168.8.15/32,217.180.40.155,no-resolve
 IP-CIDR,158.85.224.160/27,no-resolve
 IP-CIDR,158.85.46.128/27,no-resolve
 IP-CIDR,158.85.5.192/27,no-resolve
