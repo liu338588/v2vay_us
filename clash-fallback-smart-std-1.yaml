@@ -47,7 +47,7 @@ proxy-providers:
     proxy: Test
   
   美国原生住宅ISP:
-    url: "https://sub-store.xmatxl.com/iphQ0LETNpV8fh7CCc7H/download/xixi?target=ClashMeta"
+    url: "https://sub-store.xmatxl.com/iphQ0LETNpV8fh7CCc7H/download/US-ISP?target=ClashMeta"
     type: http
     interval: 86400
     health-check:
@@ -493,4 +493,5 @@ rule-providers:
 #  Google / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"}  
 #  Google / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"}
 #  GateFireWall / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/gfw.mrs"}
+
 
