@@ -7,7 +7,7 @@
 proxy-providers:
 
   火烧:
-    url: "机场订阅地址"
+    url: "http://subvonehsy.onesubv.site/mj/v8/front/mysubnew?token=52c4d387675ab0b4ec8539eddc5c5f6c&timestamp=1755228656&sign=56d5f42cc7e09d240fc1e087bb4aaaac"
     type: http
     interval: 86400
     health-check:
@@ -17,7 +17,7 @@ proxy-providers:
     proxy: 直连 
 
   冰云:
-    url: "机场订阅地址"
+    url: "https://dyy.bingyun.ink/api/v1/client/subscribe?token=244220685a193ef3469ad537a9a01c4c"
     type: http
     interval: 86400
     health-check:
@@ -26,8 +26,8 @@ proxy-providers:
       interval: 180
     proxy: 直连  
     
-  小牛:
-    url: "机场订阅地址"
+  ssrdog:
+    url: "https://no10-svip.urlapi-dodo.cyou/s?t=84837507e47d95f4879448b9a711098c"
     type: http
     interval: 86400
     health-check:
@@ -36,65 +36,25 @@ proxy-providers:
       interval: 180
     proxy: 直连    
 
-  硅谷:
-    url: "机场订阅地址"
+  自建机场:
+    url: "https://xb.xmatxl.com/s/3ad83385b7ca984fcfd9d82e62e5cda8"
     type: http
     interval: 86400
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 180
-    proxy: 直连
-
-  无界:
-    url: "机场订阅地址"
+    proxy: Test
+  
+  美国原生住宅ISP:
+    url: "https://sub-store.xmatxl.com/iphQ0LETNpV8fh7CCc7H/download/xixi?target=ClashMeta"
     type: http
     interval: 86400
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 180
-    proxy: 直连
-   
-  猫耳:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
-    proxy: 直连   
-
-  快猫:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
-    proxy: 直连    
-    
-  BestVPN:
-    url: "机场订阅地址a"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
-    proxy: 直连    
-
-  牛逼:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
-    proxy: 直连      
+    proxy: 直连     
 
 proxies:
   - {name: 直连, type: direct}
@@ -533,3 +493,4 @@ rule-providers:
 #  Google / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"}  
 #  Google / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"}
 #  GateFireWall / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/gfw.mrs"}
+
