@@ -6,28 +6,8 @@
 
 proxy-providers:
 
-  火烧:
-    url: "http://subvonehsy.onesubv.site/mj/v8/front/mysubnew?token=52c4d387675ab0b4ec8539eddc5c5f6c&timestamp=1755228656&sign=56d5f42cc7e09d240fc1e087bb4aaaac"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
-    proxy: 直连 
-
-  冰云:
-    url: "https://dyy.bingyun.ink/api/v1/client/subscribe?token=244220685a193ef3469ad537a9a01c4c"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
-    proxy: 直连  
-    
   ssrdog:
-    url: "https://no10-svip.urlapi-dodo.cyou/s?t=84837507e47d95f4879448b9a711098c"
+    url: "https://no10-svip.urlapi-dodo.cyou/s?t=fb0d14bf05bb69194073f3e6ab9b8fa4"
     type: http
     interval: 86400
     health-check:
@@ -36,8 +16,8 @@ proxy-providers:
       interval: 180
     proxy: 直连    
 
-  自建机场:
-    url: "https://xb.xmatxl.com/s/3ad83385b7ca984fcfd9d82e62e5cda8"
+  xiaoniuyun:
+    url: "https://s86lk.space/api/v1/client/subscribe?token=57040fa26851bef0f3d951f596ab4c68&connection=china"
     type: http
     interval: 86400
     health-check:
