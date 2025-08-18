@@ -145,6 +145,10 @@ default: &default
 proxy-groups:
 
   # 业务分流组
+  - name: ISP静态住宅
+    type: select
+    include-all: true
+    filter: "(?=.*(ISP)).*$"
   - {name: whastapp, <<: *default}
   - {name: AI, <<: *default}
   - {name: Meta AI, <<: *default}
@@ -173,7 +177,7 @@ proxy-groups:
   - name: 所有-智选
     type: smart
     include-all: true
-    policy-priority: ".*牛逼.*:0.8;.*(香港|HK).*:1.2"
+    policy-priority: ".*小牛.*:0.8;.*(香港|HK).*:1.2"
     uselightgbm: true
     collectdata: true
     health-check: 
@@ -203,7 +207,7 @@ proxy-groups:
   - name: 香港-智选
     type: smart
     include-all: true
-    policy-priority: ".*牛逼.*:0.8"
+    policy-priority: ".*小牛.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
@@ -231,7 +235,7 @@ proxy-groups:
   - name: 台湾-智选
     type: smart
     include-all: true
-    policy-priority: ".*牛逼.*:0.8"
+    policy-priority: ".*小牛.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
@@ -259,7 +263,7 @@ proxy-groups:
   - name: 日本-智选
     type: smart
     include-all: true
-    policy-priority: ".*牛逼.*:0.8"
+    policy-priority: ".*小牛.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
@@ -287,7 +291,7 @@ proxy-groups:
   - name: 新加坡-智选
     type: smart
     include-all: true
-    policy-priority: ".*牛逼.*:0.8"
+    policy-priority: ".*小牛.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
@@ -315,7 +319,7 @@ proxy-groups:
   - name: 美国-智选
     type: smart
     include-all: true
-    policy-priority: ".*牛逼.*:0.8"
+    policy-priority: ".*小牛.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
@@ -345,7 +349,7 @@ proxy-groups:
   - name: 其他-智选
     type: smart
     include-all: true
-    policy-priority: ".*牛逼.*:0.8"
+    policy-priority: ".*小牛.*:0.8"
     uselightgbm: true
     collectdata: true
     health-check: 
