@@ -146,7 +146,7 @@ proxy-groups:
 
   # 业务分流组
   
- # - {name: ISP, <<: *default}
+  - {name: whastapp, <<: *default}
   - {name: AI, <<: *default}
   - {name: Meta AI, <<: *default}
   - {name: Perplexity, <<: *default}
