@@ -131,7 +131,7 @@ default: &default
   type: select
   proxies:
     - 直连
-    - ISP住宅
+    - isp
     - 所有-智选
     - 所有-手选
     - 香港-智选
@@ -147,7 +147,7 @@ proxy-groups:
 
   # 业务分流组
   
-  - {name: ISP住宅, <<: *default}
+  - {name: ISP, <<: *default}
   - {name: AI, <<: *default}
   - {name: Meta AI, <<: *default}
   - {name: Perplexity, <<: *default}
