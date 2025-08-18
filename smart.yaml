@@ -5,7 +5,26 @@
 # 机场节点订阅
 
 proxy-providers:
+ ssrdog:
+    url: "https://no10-svip.urlapi-dodo.cyou/s?t=fb0d14bf05bb69194073f3e6ab9b8fa4"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 180
+    proxy: 直连  
+     
 
+  xiaoniuyun:
+    url: "https://s86lk.space/api/v1/client/subscribe?token=57040fa26851bef0f3d951f596ab4c68&connection=china"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 180
+    proxy: 直连 
 
  
 proxies:
