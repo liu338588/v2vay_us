@@ -140,6 +140,7 @@ default: &default
     - 新加坡-故转
     - 美国-故转
     - 其他-故转
+    - ISP静态住宅
     
 
 proxy-groups:
@@ -200,6 +201,10 @@ proxy-groups:
     type: select
     include-all: true
     filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
+  - name: ISP静态住宅
+    type: select
+    include-all: true
+    filter: "(?=.*(ISP)).*$"
     
   - name: 香港-智选
     type: smart
