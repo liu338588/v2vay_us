@@ -20,7 +20,8 @@ proxy-providers:
   
 
 proxies:
-  - {name: 直连, type: direct}
+  - name: 直连
+    type: direct
   - name: 德国001
     type: socks5
     server: va.494278343eacfd80.abcproxy.vip
@@ -528,6 +529,7 @@ sniffer:
   - "+.sunlogin.net"
   - "+.push.apple.com"
   parse-pure-ip: true
+
 
 
 
