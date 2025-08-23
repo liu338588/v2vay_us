@@ -338,13 +338,13 @@ proxy-groups:
   - name: 德国-手动
     type: select
     include-all: true
-    filter: "(?=.*(德国)).*$"
+    filter: "(?=.*(德))^((?!(台|日|韩|新|深|美)).)*$"
   - name: 德国-自动
     type: url-test
     include-all: true
     tolerance: 50
     interval: 300
-    filter: "(?=.*(德国)).*$"
+    filter: "(?=.*(德))^((?!(台|日|韩|新|深|美)).)*$"
   # 英国组
   - name: 英国-故转
     type: fallback
@@ -356,13 +356,13 @@ proxy-groups:
   - name: 英国-手动
     type: select
     include-all: true
-    filter: "(?=.*(英国)).*$"
+    filter: (?=.*(英国)).*$
   - name: 英国-自动
     type: url-test
     include-all: true
     tolerance: 50
     interval: 300
-    filter: "(?=.*(英国)).*$"
+    filter: (?=.*(英国)).*$
 
   # 其他组
   
@@ -500,3 +500,4 @@ rule-providers:
 #  Google / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"}  
 #  Google / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"}
 #  GateFireWall / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/gfw.mrs"}
+
