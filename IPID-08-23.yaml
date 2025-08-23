@@ -131,6 +131,8 @@ default: &default
     - 新加坡-故转
     - 美国-故转
     - 其他-故转
+    - 德国-故转
+    - 英国-故转
     
 
 proxy-groups:
@@ -271,6 +273,43 @@ proxy-groups:
     tolerance: 50
     interval: 300
     filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
+
+  # 德国组
+  - name: 德国-故转
+    type: fallback
+    interval: 300
+    lazy: false
+    proxies:
+      - 德国-手动
+      - 德国-自动
+  - name: 德国-手动
+    type: select
+    include-all: true
+    filter: "(?=.*(德国)).*$"
+  - name: 德国-自动
+    type: url-test
+    include-all: true
+    tolerance: 50
+    interval: 300
+    filter: "(?=.*(德国)).*$"
+  # 英国组
+  - name: 英国-故转
+    type: fallback
+    interval: 300
+    lazy: false
+    proxies:
+      - 英国-手动
+      - 英国-自动
+  - name: 英国-手动
+    type: select
+    include-all: true
+    filter: "(?=.*(英国)).*$"
+  - name: 英国-自动
+    type: url-test
+    include-all: true
+    tolerance: 50
+    interval: 300
+    filter: "(?=.*(英国)).*$"
 
   # 其他组
   - name: 其他-故转
@@ -444,6 +483,7 @@ sniffer:
   - "+.sunlogin.net"
   - "+.push.apple.com"
   parse-pure-ip: true
+
 
 
 
