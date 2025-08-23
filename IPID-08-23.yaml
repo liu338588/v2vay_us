@@ -22,51 +22,7 @@ proxy-providers:
 proxies:
   - name: 直连
     type: direct
-  - name: 德国001
-    type: socks5
-    server: va.494278343eacfd80.abcproxy.vip
-    port: 4950
-    udp: true
-    username: ABC7753-zone-abc-region-BE-asn--session-TKJbmPGw-sessTime-5
-    password: Aa112233
-	  dialer-proxy: 香港-故转
-
-  - name: 德国002
-    type: socks5
-    server: va.494278343eacfd80.abcproxy.vip
-    port: 4950
-    udp: true
-    username: ABC7753-zone-abc-region-BE-asn--session-5xSxzNFE-sessTime-5
-    password: Aa112233
-	  dialer-proxy: 香港-故转
   
-  - name: 德国003
-    type: socks5
-    server: va.494278343eacfd80.abcproxy.vip
-    port: 4950
-    udp: true
-    username: ABC7753-zone-abc-region-BE-asn--session-YwC5AKPh-sessTime-5
-    password: Aa112233
-	  dialer-proxy: 香港-故转
-
-
-  - name: 德国004
-    type: socks5
-    server: va.494278343eacfd80.abcproxy.vip
-    port: 4950
-    udp: true
-    username: ABC7753-zone-abc-region-BE-asn--session-TG6BJyQG-sessTime-5
-    password: Aa112233
-	  dialer-proxy: 香港-故转
-
-  - name: 德国005
-    type: socks5
-    server: va.494278343eacfd80.abcproxy.vip
-    port: 4950
-    udp: true
-    username: ABC7753-zone-abc-region-BE-asn--session-8i3C6Xrn-sessTime-5
-    password: Aa112233
-	  dialer-proxy: 香港-故转
   
 
 # ========================
@@ -529,6 +485,7 @@ sniffer:
   - "+.sunlogin.net"
   - "+.push.apple.com"
   parse-pure-ip: true
+
 
 
 
