@@ -5,26 +5,24 @@
 # 机场节点订阅
 
 proxy-providers:
-
   SDDG:
-
-    url: "https://no10-svip.urlapi-dodo.cyou/s?t=b17d44f2c98e24ce95a03316e92f6b78"  
+    url: 'https://no10-svip.urlapi-dodo.cyou/s?t=b17d44f2c98e24ce95a03316e92f6b78'
     type: http
     interval: 86400
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: 'https://www.gstatic.com/generate_204'
       interval: 300
     proxy: 直连
-自建机场:
-    url: "https://xb.xmatxl.com/s/3ad83385b7ca984fcfd9d82e62e5cda8"
+  自建机场:
+    url: 'https://xb.xmatxl.com/s/3ad83385b7ca984fcfd9d82e62e5cda8'
     type: http
     interval: 86400
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: 'https://www.gstatic.com/generate_204'
       interval: 180
-    proxy: Test  
+    proxy: Test
 
 proxies:
   - {name: 直连, type: direct}
@@ -510,6 +508,7 @@ rule-providers:
 #  Google / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"}  
 #  Google / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"}
 #  GateFireWall / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/gfw.mrs"}
+
 
 
 
